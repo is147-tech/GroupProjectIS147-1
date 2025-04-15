@@ -3,6 +3,12 @@
 import java.util.Scanner;
 import java.util.Random;
 
+/**
+ * This a main class to generate ideas for different classes that will be created in different files
+ *
+ * @author Alim Raji
+ * @version 1.0
+ */
 public class Main {
     public static void main(String[] args) {
 

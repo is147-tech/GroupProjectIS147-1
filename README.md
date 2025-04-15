@@ -27,3 +27,4 @@ This project utilizes JavaDoc to generate organized documentation for all public
 
 JavaDoc is a tool provided by the JDK that allows developers to embed documentation directly into the source code using special comment tags. The comments are compiled into navigable HTML pages that explain the structure and functionality of the code.
 
+https://is147-tech.github.io/GroupProjectIS147-1/package-summary.html

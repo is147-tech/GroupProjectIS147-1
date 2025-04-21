@@ -22,5 +22,9 @@ The issue is really clear, many young adults are going into the real world with 
 #### Our plan: 
 To address this issue, our team, Bit by Bit Finaacial Help is developing a Finance Tracker, which will be a user friendly tool designed specifically for students to track expenses, set budgets, monitor savings, simulating events of the real world to promote smart finacial decisions and gain insights into their financial habits. By providing an easy-to-use financial management solution, our project aims to help students develop responsible financial habits, reduce stress about money, and make smarter spending decisions during college and beyond. 
 
+TASK 5
+This project utilizes JavaDoc to generate organized documentation for all public classes, methods, and fields in the codebase, thereby improving readability and serving as the official documentation of the project.
 
+JavaDoc is a tool provided by the JDK that allows developers to embed documentation directly into the source code using special comment tags. The comments are compiled into navigable HTML pages that explain the structure and functionality of the code.
 
+https://is147-tech.github.io/GroupProjectIS147-1/package-summary.html

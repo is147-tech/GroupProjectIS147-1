@@ -1,4 +1,6 @@
 // specific named cards, is inheriting from CreditAccount
+
+// need to explain more about each credit card, base for now
 public class CreditCard extends CreditAccount {
     private String cardName;
     private String description;

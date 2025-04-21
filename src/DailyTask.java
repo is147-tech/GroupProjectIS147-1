@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-// finance‑focused chores that teach you something and pay up to $60
+// finance‑focused tasks that teach you something and pay up to $60
 public class DailyTask {
     private String name;    // menu label
     private String info;    // educational content
@@ -16,7 +16,7 @@ public class DailyTask {
     }
 
     /**
-     * Show the advice/info; if the user confirms, award a random $0–60.
+     * Show the advice/info; if the person confirms, award a random $0–60. just something for aesthetic
      */
     public void perform(User user, Scanner scanner) {
         System.out.println("\n--- " + name + " ---");

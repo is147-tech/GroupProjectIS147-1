@@ -1,4 +1,4 @@
-
+// information from credit account is made here
 
 public class CreditAccount extends Account {
     protected double creditLimit;

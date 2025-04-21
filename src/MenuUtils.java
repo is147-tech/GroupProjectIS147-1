@@ -118,7 +118,7 @@ public class MenuUtils {
             }
         }
     }
-
+// code for the actual menus are here, each matter name SHOULD LET YOU KNOW what its based on
     private static void depositToSavings() {
         System.out.print("Amount to deposit: $");
         double amt = scanner.nextDouble(); scanner.nextLine();

@@ -1,24 +1,34 @@
 import java.util.Random;
+import java.util.Scanner;
 
-// finance‑focused chores that pay up to $60 randomly
+// finance‑focused chores that teach you something and pay up to $60
 public class DailyTask {
-    private String description;
+    private String name;    // menu label
+    private String info;    // educational content
 
-    public DailyTask(String description) {
-        this.description = description;
+    public DailyTask(String name, String info) {
+        this.name = name;
+        this.info = info;
     }
 
-    public String getDescription() { return description; }
+    public String getName() {
+        return name;
+    }
 
-    public void perform(User user) {
-        // if it’s the special “explain” task
-        if (description.startsWith("Explain")) {
-            System.out.println("To pay off your credit card: prioritize high-interest debts, pay above the minimum, avoid new charges.");
-            return;
+    /**
+     * Show the advice/info; if the user confirms, award a random $0–60.
+     */
+    public void perform(User user, Scanner scanner) {
+        System.out.println("\n--- " + name + " ---");
+        System.out.println(info);
+        System.out.print("Learned something? (y/n): ");
+        String ans = scanner.nextLine().trim().toLowerCase();
+        if (ans.equals("y")) {
+            int reward = new Random().nextInt(61);
+            user.getCheckingAccount().deposit(reward, "Task Reward");
+            System.out.println("You earned $" + reward + "!");
+        } else {
+            System.out.println("No reward this time.");
         }
-        // otherwise random reward up to $60
-        double reward = new Random().nextInt(61);
-        user.getCheckingAccount().deposit(reward, "Task Reward");
-        System.out.println("Completed: " + description + " → +$" + reward);
     }
 }

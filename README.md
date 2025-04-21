@@ -8,7 +8,9 @@ Project Manager – Oversees the project, assigns tasks, ensures deadlines are m
 
 Lead Coder / System Designer  – Responsible for coding the core functions of the finance tracker, like income/expense tracking, budget setting, and analytics.  (Alim Raji) 
 
-Unassigned - Abdulmalik & Jojo
+Code tester - makes sure the program runs and helps the coder if needed. (abdulmalik Aremu)
+
+Commenter - added comments to the code and group project. (Jojo Ocran)
 ## The Topic
 
 Many college students struggle with managing their finances due to irregular incomes, unexpected expenses, erratic spending, and a lack of financial literacy. Being financially smart comes with several key benefits, avoids constant worry about money, debt, and unexpected expenses, ensures essential expenses are covered first, reduces reliance on credit cards and loans by managing expenses properly, and encourages responsible spending and saving habits for long-term stability.

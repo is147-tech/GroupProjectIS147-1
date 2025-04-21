@@ -1,6 +1,6 @@
 import java.util.List;
 import java.util.Scanner;
-
+// contains a bunch of cases for the different menus
 public class MenuUtils {
     public static Scanner scanner = FinanceApp.scanner;
 

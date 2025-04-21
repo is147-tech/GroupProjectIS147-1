@@ -42,7 +42,8 @@ public class FinanceApp {
             new CreditCard("Gold Card",    2000, 0.15, "Rewards on groceries & gas"),
             new CreditCard("Platinum Card",5000, 0.12, "Premium perks; annual fee applies")
     };
-
+// HYSA offers better interest rates than regular banks
+    // these names arent the best but the point to realize you can get more from letting your money sit
     public static String[] hysaNames = {
             "Standard HYSA (2%)",
             "Premium HYSA (3%)",

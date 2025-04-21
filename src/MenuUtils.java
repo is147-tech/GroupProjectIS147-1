@@ -61,6 +61,9 @@ public class MenuUtils {
             High yield savings account, more interest than the regular you start with
             view and choose different credit cards, how a job affects savings and managing money
             not sure how much tasks or what the job working will be like
+            code loops so needs an exit/logout
+            maybe a store to buy things ( not sure what yet) could evolve into a sub menu with name brand stores
+            everything affects each other
              */
             System.out.println("\nMain Menu:");
             System.out.println("1) View Accounts");
@@ -74,7 +77,7 @@ public class MenuUtils {
             System.out.println("9) Progress Day");
             System.out.println("10) Logout");
             System.out.println("11) Exit");
-
+            // self explanatory, each case has its own actions not written in the case for obvious readability
             int choice = scanner.nextInt(); scanner.nextLine();
             switch (choice) {
                 case 1:

@@ -79,6 +79,7 @@ public class MenuUtils {
             System.out.println("11) Exit");
             // self explanatory, each case has its own actions not written in the case for obvious readability
             int choice = scanner.nextInt(); scanner.nextLine();
+            // instead of coding each case as I go, im going to develop names for each where I will create its own method modifier
             switch (choice) {
                 case 1:
                     System.out.println(FinanceApp.currentUser);
@@ -118,13 +119,16 @@ public class MenuUtils {
             }
         }
     }
-// code for the actual menus are here, each matter name SHOULD LET YOU KNOW what its based on
+// code for the actual menus are here, each method  name should let you know what its based on
+   // completed: 1,2,4,5,6,7,8,9,10,11
+
+    // case 1
     private static void depositToSavings() {
         System.out.print("Amount to deposit: $");
         double amt = scanner.nextDouble(); scanner.nextLine();
         FinanceApp.currentUser.getSavingsAccount().deposit(amt, "Manual deposit");
     }
-
+// case 2 here
     private static void handleJobMenu() {
         if (!FinanceApp.currentUser.hasJobs()) {
             System.out.println("Available Jobs:");
@@ -151,7 +155,7 @@ public class MenuUtils {
             }
         }
     }
-
+// hysa, case 3 menu
     private static void handleHysaMenu() {
         System.out.println("HYSA Options:");
         for (int i = 0; i < FinanceApp.hysaNames.length; i++) {
@@ -167,7 +171,7 @@ public class MenuUtils {
             System.out.println(FinanceApp.hysaNames[h-1] + " selected.");
         }
     }
-
+// credit app menu
     private static void showCreditApplicationMenu() {
         while (true) {
             System.out.println("\nCredit Card Offers:");
@@ -192,7 +196,7 @@ public class MenuUtils {
             }
         }
     }
-
+// users specific credit info here
     private static void showCreditMenu() {
         CreditCard cc = FinanceApp.currentUser.getCreditCard();
         if (cc == null) {
@@ -218,7 +222,8 @@ public class MenuUtils {
                 break;
         }
     }
-
+// my temp store, maybe gon break into a sub menu to go to stores that cost more money
+    // maybe even stores that offer those wacky credit cards
     private static void handleStoreMenu() {
         System.out.println("\nStore:");
         System.out.println("1) Burger - $10");
@@ -239,7 +244,7 @@ public class MenuUtils {
             }
         }
     }
-
+// tasks is what serves as the way to teach about finances ( our goal)
     private static void handleTaskMenu() {
         System.out.println("\nTasks:");
         for (int i = 0; i < FinanceApp.tasks.length; i++) {

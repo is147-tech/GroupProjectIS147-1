@@ -1,13 +1,17 @@
-
+/*
+The code included in this project was created by Alim Raji | araji1@umbc.edu
+For a project based on finances for IS147 Class
+ */
 // main code, calls everything and stuff
 import java.util.Random;
 import java.util.Scanner;
+
 
 public class FinanceApp {
     public static Scanner scanner = new Scanner(System.in);
     public static Random random = new Random();
     public static User currentUser;
-            // stupid simple jobs, common college student jobs
+            //  simple jobs, common college student jobs
     public static Job[] jobOptions = {
             new Job("Barista", 75, 3),
             new Job("Tutor", 100, 5),
@@ -32,7 +36,7 @@ public class FinanceApp {
                     "Pay more than the minimum, target high‑interest balances first, and avoid new charges."
             )
     };
-// where i can update description for credit cards, might change format but need to explain more about it, just base examples rn?
+// where I can update description for credit cards, might change format but need to explain more about it, just base examples rn?
     public static CreditCard[] creditOptions = {
             new CreditCard("Basic Card",    500, 0.18, "No annual fee; beginner"),
             new CreditCard("Gold Card",    2000, 0.15, "Rewards on groceries & gas"),
@@ -47,7 +51,7 @@ public class FinanceApp {
     public static double[] hysaRates = {
             0.02, 0.03, 0.04
     };
-// function is to call the menus and loop them, you'd see a buunch of cases in here if a menu utils wasnt created
+// function is to call the menus and loop them, you'd see a bunch of cases in here if a menu utils wasn't created
     public static void main(String[] args) {
         while (true) {
             MenuUtils.showAuthMenu();

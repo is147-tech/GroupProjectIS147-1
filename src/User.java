@@ -41,7 +41,7 @@ public class User {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // creating an obect requirement 13
         sb.append("User: ").append(firstName).append(" ").append(lastName).append("\n");
         sb.append(checking).append("\n");
         sb.append(savings).append("\n");

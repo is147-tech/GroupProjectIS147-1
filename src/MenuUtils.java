@@ -13,15 +13,17 @@ public class MenuUtils {
             System.out.println("\nWelcome: 1) Create  2) Login  3) Exit");
             int c = scanner.nextInt(); scanner.nextLine();
             switch (c) {
+                //3 switch case
                 // create account case, makes boolean loggedIn true so the loop knows to start
                 case 1:
                     System.out.print("First name (no spaces): ");
                     String f = scanner.nextLine();
-                    if (f.contains(" ")) { System.out.println("Invalid."); break; }
+                    //requirement 7 , yes I know I can use isEmpty, but math requirement :)
+                    if (f.equals("") || f.contains(" ")) { System.out.println("Invalid."); break; }
                     System.out.print("Last name (no spaces): ");
                     String l = scanner.nextLine();
 
-                    if (l.contains(" ")) { System.out.println("Invalid."); break; }
+                    if (l.equals("") || l.contains(" ")) { System.out.println("Invalid."); break; }
                     System.out.print("Choose password: ");
                     String p = scanner.nextLine();
                     FinanceApp.currentUser = new User(f, l, p);

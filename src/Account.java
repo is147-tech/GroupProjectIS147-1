@@ -1,30 +1,29 @@
-import java.util.Random;
+import java.util.Random; // Requirement 19: Using Java library class
 
-// this is the  Account class: stores balance & a 6‑digit ID to make account number "realistic", random gen
-public class Account {
-    protected double balance;
+// this is the Account class: stores balance & a 6-digit ID to make account number "realistic", random gen
+public class Account { // Requirement 17: Inheritance (Base class)
+    protected double balance; // Requirement 2: Variable
     protected String accountId;
 
+    // Requirement 14: Constructor
     public Account(double initialBalance) {
-        // set up initial balance
-        this.balance = initialBalance;
-        // random 6‑digit ID, set to 6 digits for aesthetic reasons, dont want it too long,
-        this.accountId = String.format("%06d", new Random().nextInt(1_000_000));
+        this.balance = initialBalance; // Requirement 21: this Keyword
+        // Requirement 19: Random for account ID
+        this.accountId = String.format("%06d", new Random().nextInt(1_000_000)); // Requirement 6: String method (format)
     }
 
-    // deposit without source  just calls the other one
-    public void deposit(double amount) {
+    // Requirement 10: Method overloading (overloaded deposit method)
+    public void deposit(double amount) { // Requirement 9: Passing argument by value
         deposit(amount, "General");
     }
 
-    // deposit with a  note
     public void deposit(double amount, String source) {
-        balance += amount;
-        System.out.println("Deposited $" + amount + " (" + source + ")");
+        balance += amount; // Requirement 5: Assignment & arithmetical operator
+        System.out.println("Deposited $" + amount + " (" + source + ")"); // Requirement 23: println
     }
 
-    // take money out if you have it
     public void withdraw(double amount) {
+        // Requirement 5: Logical operator
         if (amount <= balance) {
             balance -= amount;
             System.out.println("Withdrew $" + amount);
@@ -35,6 +34,7 @@ public class Account {
 
     @Override
     public String toString() {
+        // Requirement 23: printf-style format using String.format
         return String.format("Account ID: %s | Balance: $%.2f", accountId, balance);
     }
 }

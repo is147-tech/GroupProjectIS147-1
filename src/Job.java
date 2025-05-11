@@ -1,28 +1,37 @@
-// jobs pay you every few days, can quit job
 public class Job {
-    private String title;
-    private double payAmount;
-    private int payInterval;   // days between paychecks
-    private int daysUntilPay;  // counts down
+    private String title;                // Requirement 2: Variable
+    private double payAmount;           // Requirement 2: Variable
+    private int payInterval;            // days between paychecks
+    private int daysUntilPay;           // Requirement 2: Variable
 
+    // Requirement 14: Constructor
     public Job(String title, double payAmount, int intervalDays) {
-        this.title = title;
-        this.payAmount = payAmount;
+        this.title = title;              // Requirement 21: this keyword
+        this.payAmount = payAmount;     // Requirement 21
         this.payInterval = intervalDays;
         this.daysUntilPay = intervalDays;
     }
 
-    public String getTitle() { return title; }
+    public String getTitle() {
+        return title;
+    }
 
-    // calls this once per “day”
+    // Requirement 5: Logical, arithmetic, and assignment operators
     public void progressDay(User user) {
-        daysUntilPay--;
-        if (daysUntilPay <= 0) {
+        daysUntilPay--; // arithmetic & assignment
+        if (daysUntilPay <= 0) { // logical
             user.getCheckingAccount().deposit(payAmount, title + " Pay");
             daysUntilPay = payInterval;
         }
     }
 
+    // Requirement 10: Method overloading (alternative string view)
+    public String toString(boolean upperCase) {
+        String base = this.toString(); // this keyword, Requirement 21
+        return upperCase ? base.toUpperCase() : base; // Requirement 4: Conditional operator
+    }
+
+    // Requirement 6: String method (used in overloaded toString)
     @Override
     public String toString() {
         return String.format(

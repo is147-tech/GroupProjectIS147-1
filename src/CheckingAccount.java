@@ -9,14 +9,6 @@ public class CheckingAccount extends Account { // Requirement 17: Inheritance (C
         super(initialBalance); // Requirement 15: super Keyword usage
     }
 
-    // Additional method to demonstrate Requirement 8: Loop
-    public void printSampleDeposits() {
-        double[] samples = {100, 200, 300}; // Requirement 11: Array
-        for (double amount : samples) { // Requirement 8: Loop
-            System.out.println("Sample deposit: $" + amount); // Requirement 23: println
-        }
-    }
-
     @Override
     public String toString() {
         return "[" + ACCOUNT_TYPE + "] " + super.toString(); // Requirement 6: String class method (concat)

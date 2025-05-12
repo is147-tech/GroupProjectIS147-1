@@ -12,10 +12,6 @@ public class CreditCard extends CreditAccount { // Requirement 17: Inheritance
         this.description = description;
     }
 
-    // Requirement 10: Method Overloading (another constructor)
-    public CreditCard(String name, double limit, double apr) {
-        this(name, limit, apr, "No description provided");
-    }
 
     // Requirement 9: Passing argument by value
     public void updateDescription(String newDescription) {
@@ -25,18 +21,6 @@ public class CreditCard extends CreditAccount { // Requirement 17: Inheritance
 
     public String getCardName() { return cardName; } // Requirement 22: Modifier
     public String getDescription() { return description; }
-
-    // Requirement 8 & 11: Loop & Array
-    public void listCardFeatures() {
-        String[] features = {
-                "Cash Back Rewards",
-                "Zero Liability Protection",
-                "Free Credit Score Monitoring"
-        };
-        for (String feature : features) {
-            System.out.println("- " + feature); // Requirement 23
-        }
-    }
 
     @Override
     public String toString() {

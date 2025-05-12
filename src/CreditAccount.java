@@ -37,7 +37,7 @@ public class CreditAccount extends Account { // Requirement 17: Inheritance (Chi
         System.out.println("Note: " + note); // Requirement 23: println
     }
 
-    /** Getter for the credit limit, used in MenuUtils */
+    // Getter for the credit limit, used in MenuUtils 
     public double getCreditLimit() {
         return creditLimit;
     }

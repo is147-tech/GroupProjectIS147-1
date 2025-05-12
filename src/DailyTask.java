@@ -46,7 +46,7 @@ public class DailyTask {
         scanner.close();
     }
 
-    // Bonus Requirement 8 & 11: Loop + Array usage
+
     public void miniQuiz() {
         String[] questions = {
                 "What is APR?",
